@@ -20,11 +20,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
     <title>FAQ Accordion Card</title>
   </head>
-  <body></body>
+  <body>
+    <div class="component-container">
+      <div class="faq-accordion">
+        <div class="illustration-container">
+          <picture class="overflow-illustration">
+            <source
+              srcset="./images/illustration-box-desktop.svg"
+              media="(min-width: 851px)"
+            />
+            <img src="./images/illustration-woman-online-mobile.svg" alt="" />
+          </picture>
+        </div>
+        <section class="accordion">
+          <h1>FAQ</h1>
+          <div class="question">
+            <input id="q1" type="radio" name="active" />
+            <label for="q1">How many team members can I invite ?</label>
+            <div class="answer">You can invite upto 3 members.</div>
+          </div>
+
+          <div class="question">
+            <input id="q2" type="radio" name="active" checked />
+            <label for="q2">What is the maximum file upload size ?</label>
+            <div class="answer">
+              No more than 2GB. All files in your account must fit your allotted
+              storage space.
+            </div>
+          </div>
+
+          <div class="question">
+            <input id="q3" type="radio" name="active" />
+            <label for="q3">How do I reset my password ?</label>
+            <div class="answer">
+              You can reset your password by clicking "reset my password" bellow
+              your username.
+            </div>
+          </div>
+
+          <div class="question">
+            <input id="q4" type="radio" name="active" />
+            <label for="q4">Can I cancel my subsription ?</label>
+            <div class="answer">
+              Sadly you can! you can cancel your subscription within 14 days,
+              after that you cannot.
+            </div>
+          </div>
+
+          <div class="question">
+            <input id="q5" type="radio" name="active" />
+            <label for="q5">Do you provide additional support ?</label>
+            <div class="answer">
+              Yes, Feel free to contact our support team for more details
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
 </html>
