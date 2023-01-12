@@ -114,7 +114,8 @@ body {
 
 .accordion .question label {
   cursor: pointer;
-  transition: font ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
+  transition-property: font, color;
 }
 
 .accordion .question label::after {
@@ -132,6 +133,10 @@ body {
 .accordion .question input[type='radio']:checked + label {
   font-weight: 700;
   color: var(--colors-very-dark-desaturated-blue);
+}
+
+.accordion .question input[type='radio']:not(:checked) + label:hover {
+  color: var(--colors-soft-red);
 }
 
 .accordion .question input[type='radio']:checked + label::after {
