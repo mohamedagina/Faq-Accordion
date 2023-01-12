@@ -65,7 +65,7 @@ body {
   width: min(925px, 100%);
   gap: 1rem;
   background-color: #fff;
-  border-radius: 2.5rem;
+  border-radius: 2rem;
 }
 
 .illustration-container {
@@ -216,12 +216,12 @@ body {
   }
 
   .faq-accordion {
-    margin-top: 7rem;
-    padding-bottom: 3rem;
+    margin-top: 9rem;
+    padding-bottom: 2.5rem;
   }
 
   .illustration-container {
-    padding-bottom: 3rem;
+    padding-bottom: 2.5rem;
   }
 
   .accordion .question .answer {
